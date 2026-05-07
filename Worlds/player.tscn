@@ -20,7 +20,7 @@ size = Vector2(1062, 1080)
 [node name="player" type="CharacterBody2D"]
 light_mask = 8
 visibility_layer = 8
-scale = Vector2(0.315, 0.315)
+scale = Vector2(0.135, 0.135)
 script = ExtResource("1_eb5xe")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

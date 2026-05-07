@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://67t7ct6bqd2s"]
 
-[node name="Node" type="Node"]
+[node name="Camera" type="Node"]
 
 [node name="Big camera" type="Camera2D" parent="."]
 position = Vector2(575, 322)
+scale = Vector2(2, 2)
