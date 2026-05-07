@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://qqxr62jgyirh"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_eb5xe"]
+[ext_resource type="Texture2D" uid="uid://cyyk0q0jl13lu" path="res://Images/PNG/blue_square.png" id="2_j7rlj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p37k6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_j7rlj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqup5"]
+size = Vector2(1062, 1080)
+
+[node name="player" type="CharacterBody2D"]
+light_mask = 8
+visibility_layer = 8
+scale = Vector2(0.315, 0.315)
+script = ExtResource("1_eb5xe")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-453.5, 448.5)
+scale = Vector2(0.496111, 0.501667)
+sprite_frames = SubResource("SpriteFrames_p37k6")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-459, 443)
+shape = SubResource("RectangleShape2D_tqup5")
+debug_color = Color(0.643137, 0, 0.168627, 0.368627)
