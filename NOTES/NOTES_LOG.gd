@@ -13,8 +13,8 @@ extends Node
 
 # 5/7/26 
 # connected with github
-# setting up tileset + map 
-#
+# setting up tileset + map (see below for more notes)
+# Made tileset 64 by 64 I can now edit it easier
 
 
 

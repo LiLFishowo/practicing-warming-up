@@ -1,16 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://bhhiy87n8tsnm"]
 
-[ext_resource type="Texture2D" uid="uid://crynmpvg3ieeg" path="res://Images/PNG/Purple_square.png" id="1_tcbc6"]
 [ext_resource type="PackedScene" uid="uid://67t7ct6bqd2s" path="res://Worlds/node.tscn" id="2_2ut6k"]
 [ext_resource type="PackedScene" uid="uid://qqxr62jgyirh" path="res://Worlds/player.tscn" id="3_6ba7n"]
+[ext_resource type="PackedScene" uid="uid://diky3qkuroqm4" path="res://Worlds/tile_map.tscn" id="3_ted1m"]
 
 [node name="2D_Main_Script" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-29, 356)
-scale = Vector2(3.21, 1.77444)
-texture = ExtResource("1_tcbc6")
 
 [node name="Node" parent="." instance=ExtResource("2_2ut6k")]
 
 [node name="player" parent="." instance=ExtResource("3_6ba7n")]
+
+[node name="TileMap" parent="." instance=ExtResource("3_ted1m")]
